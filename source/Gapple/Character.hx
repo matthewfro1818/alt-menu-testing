@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import flixel.addons.effects.chainable.FlxEffectSprite;
 import flixel.FlxG;
