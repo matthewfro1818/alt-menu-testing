@@ -1,6 +1,6 @@
-package;
+package Gapple;
 
-import Conductor.BPMChangeEvent;
+import Gapple.Conductor.BPMChangeEvent;
 import flixel.FlxG;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.addons.ui.FlxUIState;
