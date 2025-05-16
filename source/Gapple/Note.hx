@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import flixel.math.FlxRandom;
 import flixel.FlxState;
