@@ -9,8 +9,6 @@ import io.newgrounds.objects.Medal;
 import io.newgrounds.objects.Score;
 import io.newgrounds.objects.ScoreBoard;
 import io.newgrounds.objects.events.Response;
-import io.newgrounds.objects.events.Result.GetCurrentVersionResult;
-import io.newgrounds.objects.events.Result.GetVersionResult;
 import lime.app.Application;
 import openfl.display.Stage;
 
@@ -44,7 +42,7 @@ class NGio
 
 			new FlxTimer().start(2, function(tmr:FlxTimer)
 			{
-				var call = NG.core.calls.app.getCurrentVersion(GAME_VER).addDataHandler(function(response:Response<GetCurrentVersionResult>)
+				var call = NG.core.calls.app.getCurrentVersion(GAME_VER).addStatusHandler(function(response:Response<>)
 				{
 					GAME_VER = response.result.data.currentVersion;
 					GAME_VER_NUMS = GAME_VER.split(" ")[0].trim();
@@ -89,35 +87,7 @@ class NGio
 
 	function onNGLogin():Void
 	{
-		trace('logged in! user:${NG.core.user.name}');
-		isLoggedIn = true;
-		FlxG.save.data.sessionId = NG.core.sessionId;
-		// FlxG.save.flush();
-		// Load medals then call onNGMedalFetch()
-		NG.core.requestMedals(onNGMedalFetch);
-
-		// Load Scoreboards hten call onNGBoardsFetch()
-		NG.core.requestScoreBoards(onNGBoardsFetch);
-
-		ngDataLoaded.dispatch();
-	}
-
-	// --- MEDALS
-	function onNGMedalFetch():Void
-	{
-		/*
-			// Reading medal info
-			for (id in NG.core.medals.keys())
-			{
-				var medal = NG.core.medals.get(id);
-				trace('loaded medal id:$id, name:${medal.name}, description:${medal.description}');
-			}
-
-			// Unlocking medals
-			var unlockingMedal = NG.core.medals.get(54352);// medal ids are listed in your NG project viewer
-			if (!unlockingMedal.unlocked)
-				unlockingMedal.sendUnlock();
-		 */
+		//nope
 	}
 
 	// --- SCOREBOARDS
