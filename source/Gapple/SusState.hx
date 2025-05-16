@@ -1,3 +1,4 @@
+package Gapple;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.*;
