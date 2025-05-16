@@ -1,6 +1,6 @@
 package Gapple;
 
-import Shaders.InvertShader;
+import Gapple.Shaders.InvertShader;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
