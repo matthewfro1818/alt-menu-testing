@@ -2,6 +2,7 @@ package Gapple;
 
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
+import Gapple.Paths;
 
 class MenuCharacter extends FlxSprite
 {
