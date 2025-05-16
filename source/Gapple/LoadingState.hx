@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import lime.app.Promise;
 import lime.app.Future;
@@ -15,7 +15,7 @@ import lime.utils.AssetManifest;
 
 import haxe.io.Path;
 
-class LoadingState extends MusicBeatState
+class LoadingState extends Gapple.MusicBeatState
 {
 	inline static var MIN_TIME = 1.0;
 	
