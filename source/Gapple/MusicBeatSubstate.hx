@@ -1,8 +1,9 @@
-package;
+package Gapple;
 
 import Conductor.BPMChangeEvent;
 import flixel.FlxG;
 import flixel.FlxSubState;
+import Gapple.PlayerSettings;
 
 class MusicBeatSubstate extends FlxSubState
 {
