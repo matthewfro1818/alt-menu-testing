@@ -1,6 +1,5 @@
 package flixel.addons.transition;
 
-import flixel.addons.transition.TransitionData;
 import flixel.addons.transition.TransitionData.TransitionType;
 import flixel.addons.transition.TransitionEffect;
 import flixel.addons.transition.TransitionFade;
@@ -15,7 +14,6 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
-import flixel.FlxCamera;
 
 /**
  * This substate is automatically created to play the actual transition visuals inside a FlxTransitionState.
@@ -25,7 +23,6 @@ import flixel.FlxCamera;
 class Transition extends FlxSubState
 {
 	public var finishCallback(get, set):Void->Void;
-	public static var nextCamera:FlxCamera;
 
 	var _effect:TransitionEffect;
 
@@ -35,11 +32,6 @@ class Transition extends FlxSubState
 		_effect = createEffect(data);
 		_effect.scrollFactor.set(0, 0);
 		add(_effect);
-
-		if(nextCamera != null) {
-			_effect.cameras = [nextCamera];
-		}
-		nextCamera = null;
 	}
 
 	override public function update(elapsed:Float):Void
@@ -71,7 +63,7 @@ class Transition extends FlxSubState
 		switch (Data.type)
 		{
 			case TransitionType.TILES:
-				return new TransitionDither(Data);
+				return new TransitionTiles(Data);
 			case TransitionType.FADE:
 				return new TransitionFade(Data);
 			default:
