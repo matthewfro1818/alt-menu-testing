@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import flixel.input.gamepad.FlxGamepad;
 import openfl.Lib;
