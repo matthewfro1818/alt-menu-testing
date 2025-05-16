@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import flixel.math.FlxRandom;
 import flixel.math.FlxPoint;
@@ -16,12 +16,12 @@ import flixel.util.FlxColor;
 import io.newgrounds.NG;
 import lime.app.Application;
 #if desktop
-import Discord.DiscordClient;
+import Gapple.Discord.DiscordClient;
 #end
 
 using StringTools;
 
-class MainMenuState extends MusicBeatState
+class MainMenuState extends Gapple.MusicBeatState
 {
 	var curSelected:Int = 0;
 
