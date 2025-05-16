@@ -1,6 +1,6 @@
-package;
+package Gapple;
 
-import Section.SwagSection;
+import Gapple.Section.SwagSection;
 import haxe.Json;
 import haxe.format.JsonParser;
 import lime.utils.Assets;
