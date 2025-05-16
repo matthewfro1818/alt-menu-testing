@@ -1,4 +1,4 @@
-package;
+package Gapple;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
