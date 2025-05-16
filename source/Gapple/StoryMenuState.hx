@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import flixel.math.FlxPoint;
 import flixel.tweens.FlxEase;
@@ -16,12 +16,12 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 #if desktop
-import Discord.DiscordClient;
+import Gapple.Discord.DiscordClient;
 #end
 
 using StringTools;
 
-class StoryMenuState extends MusicBeatState
+class StoryMenuState extends Gapple.MusicBeatState
 {
 	var scoreText:FlxText;
 
