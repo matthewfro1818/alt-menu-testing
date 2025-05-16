@@ -17,16 +17,18 @@ import flixel.util.FlxColor;
 import flixel.util.FlxStringUtil;
 import lime.utils.Assets;
 #if desktop
-import Discord.DiscordClient;
+import Gapple.Discord.DiscordClient;
 #end
 using StringTools;
+import Gapple.PlaySongMetadata;
+import Gapple.HealthIcon;
 
 
 //a lot of this code is copied from freeplay lol
 
 //unlike the character select code, you guys are free to use this without asking me(but you gotta give me credit), although you might have to ask moldy. -ben
 
-class MusicPlayerState extends MusicBeatState
+class MusicPlayerState extends Gapple.MusicBeatState
 {
     var songs:Array<PlaySongMetadata> = [];
     private var grpSongs:FlxTypedGroup<Alphabet>;
