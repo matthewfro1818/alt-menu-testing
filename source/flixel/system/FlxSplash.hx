@@ -1,6 +1,5 @@
 package flixel.system;
 
-import flixel.text.FlxText;
 import flash.display.Graphics;
 import flash.display.Sprite;
 import flash.Lib;
@@ -8,11 +7,7 @@ import flash.text.TextField;
 import flash.text.TextFormat;
 import flash.text.TextFormatAlign;
 import flixel.FlxG;
-import flixel.FlxObject;
-import flixel.FlxSprite;
 import flixel.FlxState;
-import flixel.graphics.frames.FlxAtlasFrames;
-import sys.FileSystem;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
@@ -27,13 +22,17 @@ class FlxSplash extends FlxState
 	 */
 	public static var muted:Bool = #if html5 true #else false #end;
 
-	var animatedIntro:FlxSprite;
-	var animatedTex:FlxAtlasFrames;
+	var _sprite:Sprite;
+	var _gfx:Graphics;
+	var _text:TextField;
 
+	var _times:Array<Float>;
+	var _colors:Array<Int>;
+	var _functions:Array<Void->Void>;
+	var _curPart:Int = 0;
 	var _cachedBgColor:FlxColor;
 	var _cachedTimestep:Bool;
 	var _cachedAutoPause:Bool;
-	var skipScreen:FlxText;
 
 	override public function create():Void
 	{
@@ -47,67 +46,147 @@ class FlxSplash extends FlxState
 		_cachedAutoPause = FlxG.autoPause;
 		FlxG.autoPause = false;
 
-		animatedTex = Paths.getSplashSparrowAtlas('ui/flixel_intro', 'preload');
+		#if FLX_KEYBOARD
+		FlxG.keys.enabled = false;
+		#end
 
-		animatedIntro = new FlxSprite(0,0);
-		animatedIntro.frames = animatedTex;
-		animatedIntro.animation.addByPrefix('intro', 'intro', 24);
-		animatedIntro.animation.play('intro');
-		animatedIntro.updateHitbox();
-		animatedIntro.antialiasing = false;
-		animatedIntro.screenCenter();
-		add(animatedIntro);
+		_times = [0.041, 0.184, 0.334, 0.495, 0.636];
+		_colors = [0x00b922, 0xffc132, 0xf5274e, 0x3641ff, 0x04cdfb];
+		_functions = [drawGreen, drawYellow, drawRed, drawBlue, drawLightBlue];
 
-		new FlxTimer().start(0.636, timerCallback);
+		for (time in _times)
+		{
+			new FlxTimer().start(time, timerCallback);
+		}
 
 		var stageWidth:Int = Lib.current.stage.stageWidth;
 		var stageHeight:Int = Lib.current.stage.stageHeight;
+
+		_sprite = new Sprite();
+		FlxG.stage.addChild(_sprite);
+		_gfx = _sprite.graphics;
+
+		_text = new TextField();
+		_text.selectable = false;
+		_text.embedFonts = true;
+		var dtf = new TextFormat(FlxAssets.FONT_DEFAULT, 16, 0xffffff);
+		dtf.align = TextFormatAlign.CENTER;
+		_text.defaultTextFormat = dtf;
+		_text.text = "HaxeFlixel";
+		FlxG.stage.addChild(_text);
 
 		onResize(stageWidth, stageHeight);
 
 		#if FLX_SOUND_SYSTEM
 		if (!muted)
 		{
-			FlxG.sound.load(Paths.sound("flixel", 'preload')).play();
+			FlxG.sound.load(FlxAssets.getSound("flixel/sounds/flixel")).play();
 		}
 		#end
-		if (FlxG.save.data.hasSeenSplash != null && FlxG.save.data.hasSeenSplash)
-		{
-			skipScreen = new FlxText(0, FlxG.height, 0, 'Press Enter To Skip', 16);
-			skipScreen.setFormat("Comic Sans MS Bold", 18, FlxColor.WHITE, FlxTextAlign.LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-			skipScreen.borderSize = 1.5;
-			skipScreen.antialiasing = true;
-			skipScreen.scrollFactor.set();
-			skipScreen.alpha = 0;
-			skipScreen.y -= skipScreen.textField.textHeight;
-			add(skipScreen);
-
-			FlxTween.tween(skipScreen, {alpha: 1}, 1);
-		}
-	}
-	override public function update(elapsed:Float)
-	{
-		if (FlxG.save.data.hasSeenSplash && FlxG.keys.justPressed.ENTER)
-		{
-			onComplete(null);
-		}
-		super.update(elapsed);
 	}
 
 	override public function destroy():Void
 	{
+		_sprite = null;
+		_gfx = null;
+		_text = null;
+		_times = null;
+		_colors = null;
+		_functions = null;
 		super.destroy();
-		animatedIntro.destroy();
 	}
 
 	override public function onResize(Width:Int, Height:Int):Void
 	{
 		super.onResize(Width, Height);
+
+		_sprite.x = (Width / 2);
+		_sprite.y = (Height / 2) - 20 * FlxG.game.scaleY;
+
+		_text.width = Width / FlxG.game.scaleX;
+		_text.x = 0;
+		_text.y = _sprite.y + 80 * FlxG.game.scaleY;
+
+		_sprite.scaleX = _text.scaleX = FlxG.game.scaleX;
+		_sprite.scaleY = _text.scaleY = FlxG.game.scaleY;
 	}
 
 	function timerCallback(Timer:FlxTimer):Void
 	{
-		FlxTween.tween(animatedIntro, {alpha: 0}, 3.0, {ease: FlxEase.quadOut, onComplete: onComplete});
+		_functions[_curPart]();
+		_text.textColor = _colors[_curPart];
+		_text.text = "HaxeFlixel";
+		_curPart++;
+
+		if (_curPart == 5)
+		{
+			// Make the logo a tad bit longer, so our users fully appreciate our hard work :D
+			FlxTween.tween(_sprite, {alpha: 0}, 3.0, {ease: FlxEase.quadOut, onComplete: onComplete});
+			FlxTween.tween(_text, {alpha: 0}, 3.0, {ease: FlxEase.quadOut});
+		}
+	}
+
+	function drawGreen():Void
+	{
+		_gfx.beginFill(0x00b922);
+		_gfx.moveTo(0, -37);
+		_gfx.lineTo(1, -37);
+		_gfx.lineTo(37, 0);
+		_gfx.lineTo(37, 1);
+		_gfx.lineTo(1, 37);
+		_gfx.lineTo(0, 37);
+		_gfx.lineTo(-37, 1);
+		_gfx.lineTo(-37, 0);
+		_gfx.lineTo(0, -37);
+		_gfx.endFill();
+	}
+
+	function drawYellow():Void
+	{
+		_gfx.beginFill(0xffc132);
+		_gfx.moveTo(-50, -50);
+		_gfx.lineTo(-25, -50);
+		_gfx.lineTo(0, -37);
+		_gfx.lineTo(-37, 0);
+		_gfx.lineTo(-50, -25);
+		_gfx.lineTo(-50, -50);
+		_gfx.endFill();
+	}
+
+	function drawRed():Void
+	{
+		_gfx.beginFill(0xf5274e);
+		_gfx.moveTo(50, -50);
+		_gfx.lineTo(25, -50);
+		_gfx.lineTo(1, -37);
+		_gfx.lineTo(37, 0);
+		_gfx.lineTo(50, -25);
+		_gfx.lineTo(50, -50);
+		_gfx.endFill();
+	}
+
+	function drawBlue():Void
+	{
+		_gfx.beginFill(0x3641ff);
+		_gfx.moveTo(-50, 50);
+		_gfx.lineTo(-25, 50);
+		_gfx.lineTo(0, 37);
+		_gfx.lineTo(-37, 1);
+		_gfx.lineTo(-50, 25);
+		_gfx.lineTo(-50, 50);
+		_gfx.endFill();
+	}
+
+	function drawLightBlue():Void
+	{
+		_gfx.beginFill(0x04cdfb);
+		_gfx.moveTo(50, 50);
+		_gfx.lineTo(25, 50);
+		_gfx.lineTo(1, 37);
+		_gfx.lineTo(37, 1);
+		_gfx.lineTo(50, 25);
+		_gfx.lineTo(50, 50);
+		_gfx.endFill();
 	}
 
 	function onComplete(Tween:FlxTween):Void
@@ -118,13 +197,9 @@ class FlxSplash extends FlxState
 		#if FLX_KEYBOARD
 		FlxG.keys.enabled = true;
 		#end
+		FlxG.stage.removeChild(_sprite);
+		FlxG.stage.removeChild(_text);
 		FlxG.switchState(Type.createInstance(nextState, []));
 		FlxG.game._gameJustStarted = true;
-
-		if (FlxG.save.data.hasSeenSplash == null)
-		{
-			FlxG.save.data.hasSeenSplash = true;
-			FlxG.save.flush();
-		}
 	}
 }
