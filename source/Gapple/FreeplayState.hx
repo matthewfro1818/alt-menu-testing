@@ -14,11 +14,11 @@ import flixel.tweens.FlxTween;
 import flixel.util.FlxStringUtil;
 import lime.utils.Assets;
 #if desktop
-import Discord.DiscordClient;
+import Gapple.Discord.DiscordClient;
 #end
 using StringTools;
 
-class FreeplayState extends MusicBeatState
+class FreeplayState extends Gapple.MusicBeatState
 {
 	var songs:Array<SongMetadata> = [];
 
