@@ -4,7 +4,7 @@ import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 
-class GitarooPause extends MusicBeatState
+class GitarooPause extends Gapple.MusicBeatState
 {
 	var replayButton:FlxSprite;
 	var cancelButton:FlxSprite;
