@@ -1,6 +1,6 @@
-package;
+package Gapple;
 
-import Controls.Control;
+import Gapple.Controls.Control;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxSubState;
@@ -13,7 +13,7 @@ import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
 
-class PauseSubState extends MusicBeatSubstate
+class PauseSubState extends Gapple.MusicBeatSubstate
 {
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
