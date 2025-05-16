@@ -1,6 +1,8 @@
-package;
+package Gapple;
 
 import openfl.Lib;
+import Gapple.VideoHandler;
+import Gapple.WebmHandler;
 
 class GlobalVideo
 {
