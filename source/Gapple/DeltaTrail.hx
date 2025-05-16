@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import flixel.addons.effects.FlxTrail;
 import flixel.animation.FlxAnimation;
