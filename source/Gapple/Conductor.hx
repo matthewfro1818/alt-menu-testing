@@ -1,6 +1,6 @@
-package;
+package Gapple;
 
-import Song.SwagSong;
+import Gapple.Song.SwagSong;
 
 /**
  * ...
