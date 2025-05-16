@@ -1,6 +1,6 @@
 package;
 
-import Controls;
+import Gapple.Controls;
 import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.util.FlxSignal;
@@ -11,8 +11,8 @@ class PlayerSettings
 {
 	static public var numPlayers(default, null) = 0;
 	static public var numAvatars(default, null) = 0;
-	static public var player1(default, null):PlayerSettings;
-	static public var player2(default, null):PlayerSettings;
+	static public var player1(default, null):Gapple.PlayerSettings;
+	static public var player2(default, null):Gapple.PlayerSettings;
 
 	#if (haxe >= "4.0.0")
 	static public final onAvatarAdd = new FlxTypedSignal<PlayerSettings->Void>();
