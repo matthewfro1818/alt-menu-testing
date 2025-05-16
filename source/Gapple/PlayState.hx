@@ -1,12 +1,12 @@
-package;
+package Gapple;
 
 import flixel.tweens.misc.ColorTween;
 import flixel.math.FlxRandom;
 import openfl.net.FileFilter;
 import openfl.filters.BitmapFilter;
 import Shaders.PulseEffect;
-import Section.SwagSection;
-import Song.SwagSong;
+import Gapple.Section.SwagSection;
+import Gapple.Song.SwagSong;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
@@ -44,7 +44,7 @@ import openfl.display.StageQuality;
 import openfl.filters.ShaderFilter;
 import flash.system.System;
 #if desktop
-import Discord.DiscordClient;
+import Gapple.Discord.DiscordClient;
 #end
 
 #if windows
@@ -54,7 +54,7 @@ import sys.io.Process;
 
 using StringTools;
 
-class PlayState extends MusicBeatState
+class PlayState extends Gapple.MusicBeatState
 {
 	public static var mania:Int = 0;
 
