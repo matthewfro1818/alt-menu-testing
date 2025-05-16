@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import flixel.FlxG;
 import flixel.input.FlxInput;
