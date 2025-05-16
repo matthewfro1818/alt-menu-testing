@@ -2,7 +2,7 @@ package;
 
 import flixel.math.FlxRandom;
 import flixel.math.FlxPoint;
-import Controls.KeyboardScheme;
+import Gapple.Controls.KeyboardScheme;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;
@@ -21,7 +21,7 @@ import Gapple.Discord.DiscordClient;
 
 using StringTools;
 
-class ExtrasMenuState extends MusicBeatState
+class ExtrasMenuState extends Gapple.MusicBeatState
 {
 	var curSelected:Int = 0;
 
