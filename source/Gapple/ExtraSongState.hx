@@ -20,7 +20,7 @@ import Gapple.Discord.DiscordClient;
 #end
 using StringTools;
 
-class ExtraSongState extends MusicBeatState
+class ExtraSongState extends Gapple.MusicBeatState
 {
 
     var songs:Array<SongMetadata> = [];
