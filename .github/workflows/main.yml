@@ -1,8 +1,8 @@
-# THE FOLLOWING ACTIONS CODE IS FROM THE PSYCH ENGINE REPO: https://github.com/ShadowMario/FNF-PsychEngine/blob/main/.github/workflows/main.yml
+# This is a basic workflow to help you get started with Actions
 
-name: Build
+name: Pc/Desktop
 
-# Controls when the action will run.
+# Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
@@ -15,30 +15,61 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  ReleaseBuild:
-    runs-on: windows-latest
-
+  Desktop:
+    runs-on: ${{matrix.os}}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest]
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@main
 
-      - uses: krdlab/setup-haxe@v1
+      - uses: krdlab/setup-haxe@master
         with:
-          haxe-version: 4.2.5
-      # Runs a set of commands using the runners shell
-      - name: Install Haxelib
+          haxe-version: 4.3.4
+
+      - name: Install Libraries
         run: |
           haxelib setup C:/haxelib
-          haxelib install hxcpp > nul
-          .\"Bulid.bat"
-        shell: cmd
-      - name: Create Version Tag
-        run: echo "${{github.run_id}}" > VERSION
-      - name: Compile
-        run: haxelib run lime build windows --app-version="4.0.0-${{ github.run_id}}"
-      - name: Publish Artifact
-        uses: actions/upload-artifact@v4
+          .\"setup/windows.bat"
+      - name: Compile (Windows)
+        if: startsWith(matrix.os, 'windows')
+        run: haxelib run lime build windows -D officialBuild
+
+      - name: Upload Artifact (Windows)
+        if: startsWith(matrix.os, 'windows')
+        uses: actions/upload-artifact@main
         with:
-          name: ReleaseBuild
-          path: export/release/windows/bin
+          name: windowsBuild
+          path: export\release\windows\bin\*
+          if-no-files-found: error
+  Desktop_Debug:
+    runs-on: ${{matrix.os}}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main 
+
+      - uses: krdlab/setup-haxe@master
+        with:
+          haxe-version: 4.3.4
+
+      - name: Install Libraries
+        run: |
+          haxelib setup C:/haxelib
+          .\"setup/windows.bat"
+      - name: Compile (Windows Debug)
+        if: startsWith(matrix.os, 'windows')
+        run: haxelib run lime build windows -D officialBuild -debug
+
+      - name: Upload Artifact (Windows Debug)
+        if: startsWith(matrix.os, 'windows')
+        uses: actions/upload-artifact@main
+        with:
+          name: windowsBuild_Debug
+          path: export\debug\windows\bin\*
+          if-no-files-found: error
