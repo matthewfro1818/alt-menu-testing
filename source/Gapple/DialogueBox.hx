@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import flixel.math.FlxPoint;
 import openfl.display.Shader;
