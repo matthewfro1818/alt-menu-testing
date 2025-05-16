@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import flixel.util.FlxColor;
 import openfl.display.ShaderParameter;
