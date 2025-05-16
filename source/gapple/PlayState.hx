@@ -4,7 +4,7 @@ import flixel.tweens.misc.ColorTween;
 import flixel.math.FlxRandom;
 import openfl.net.FileFilter;
 import openfl.filters.BitmapFilter;
-import Shaders.PulseEffect;
+import gapple.Shaders.PulseEffect;
 import gapple.Section.SwagSection;
 import gapple.Song.SwagSong;
 import flixel.FlxBasic;
