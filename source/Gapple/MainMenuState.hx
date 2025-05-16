@@ -198,7 +198,7 @@ class MainMenuState extends Gapple.MusicBeatState
 
 			if (controls.BACK)
 			{
-				FlxG.switchState(new TitleState());
+				FlxG.switchState(new FreeplayState());
 			}
 
 			if (controls.ACCEPT)
@@ -237,37 +237,37 @@ class MainMenuState extends Gapple.MusicBeatState
 							switch (daChoice)
 							{
 								case 'story mode':
-									FlxG.switchState(new StoryMenuState());
+									FlxG.switchState(new Gapple.StoryMenuState());
 									trace("Story Menu Selected");
 								case 'freeplay':
-									FlxG.switchState(new FreeplayState());
+									FlxG.switchState(new Gapple.FreeplayState());
 									trace("Freeplay Menu Selected");
 								case 'options':
-									FlxG.switchState(new OptionsMenu());
+									FlxG.switchState(new Gapple.OptionsMenu());
 								case 'extras':
-									FlxG.switchState(new ExtraSongState());
+									FlxG.switchState(new Gapple.ExtraSongState());
 								case 'ost':
-									FlxG.switchState(new MusicPlayerState());
+									FlxG.switchState(new Gapple.MusicPlayerState());
 								case 'credits':
-									FlxG.switchState(new CreditsMenuState());
+									FlxG.switchState(new Gapple.CreditsMenuState());
 								case 'play':
-									FlxG.switchState(new PlayMenuState());
+									FlxG.switchState(new Gapple.PlayMenuState());
 								case 'dave x bambi shipping cute':
-									var poop:String = Highscore.formatSong('dave-x-bambi-shipping-cute', 0);
+									var poop:String = Gapple.Highscore.formatSong('dave-x-bambi-shipping-cute', 0);
 
 									trace(poop);
 
 									FlxG.save.data.shipUnlocked = true;
 						
-									PlayState.SONG = Song.loadFromJson(poop, 'dave-x-bambi-shipping-cute');
-									PlayState.isStoryMode = false;
-									PlayState.storyDifficulty = 0;
-									PlayState.xtraSong = false;
+									Gapple.PlayState.SONG = Gapple.Song.loadFromJson(poop, 'dave-x-bambi-shipping-cute');
+									Gapple.PlayState.isStoryMode = false;
+									Gapple.PlayState.storyDifficulty = 0;
+									Gapple.PlayState.xtraSong = false;
 						
-									PlayState.formoverride = 'none';
+									Gapple.PlayState.formoverride = 'none';
 
-									PlayState.storyWeek = 1;
-									LoadingState.loadAndSwitchState(new PlayState());
+									Gapple.PlayState.storyWeek = 1;
+									Gapple.LoadingState.loadAndSwitchState(new Gapple.PlayState());
 							}
 						});
 					}
