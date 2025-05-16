@@ -1,4 +1,4 @@
-package;
+package gapple;
 
 import flixel.util.FlxTimer;
 import flixel.tweens.FlxEase;
