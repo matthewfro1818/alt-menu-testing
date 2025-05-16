@@ -1,10 +1,11 @@
-package;
+package Gapple;
 
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.FlxState;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.text.FlxText;
+import Gapple.Paths;
 
 class LatencyState extends FlxState
 {
