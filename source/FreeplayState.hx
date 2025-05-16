@@ -409,7 +409,7 @@ class FreeplayState extends MusicBeatState
 				addWeek(['omission'], 21, ['dan']);
 				addWeek(['Doge-Vs-Bambi'], 22, ['doge']);
 				addWeek(['Wacky'], 24, ['peabrain']);
-				addWeek(['Enter Gapple Menu'], 2, ['bandu']);
+				addWeek(['Enter Gapple Menu'], 2, ['bandu-applecore']);
 			case 'cover':
 				addWeek(['Confronting-Yourself'], 4, ['tristan-festival']);
 				addWeek(['Cob', 'Super-Saiyan'], 1, ['dave', 'dave-annoyed']);
