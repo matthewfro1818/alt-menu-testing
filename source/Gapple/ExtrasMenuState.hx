@@ -16,7 +16,7 @@ import flixel.util.FlxColor;
 import io.newgrounds.NG;
 import lime.app.Application;
 #if desktop
-import Discord.DiscordClient;
+import Gapple.Discord.DiscordClient;
 #end
 
 using StringTools;
@@ -179,7 +179,7 @@ class ExtrasMenuState extends MusicBeatState
 
 			if (controls.BACK)
 			{
-				FlxG.switchState(new MainMenuState());
+				FlxG.switchState(new Gapple.MainMenuState());
 			}
 
 			if (controls.ACCEPT)
@@ -221,17 +221,17 @@ class ExtrasMenuState extends MusicBeatState
                                 switch (daChoice)
                                 {
                                     case 'story mode':
-                                        FlxG.switchState(new StoryMenuState());
+                                        FlxG.switchState(new Gapple.StoryMenuState());
                                         trace("Story Menu Selected");
                                     case 'freeplay':
-                                        FlxG.switchState(new FreeplayState());
+                                        FlxG.switchState(new Gapple.FreeplayState());
                                         trace("Freeplay Menu Selected");
                                     case 'options':
-                                        FlxG.switchState(new OptionsMenu());
+                                        FlxG.switchState(new Gapple.OptionsMenu());
                                     case 'ost':
-                                        FlxG.switchState(new MusicPlayerState());
+                                        FlxG.switchState(new Gapple.MusicPlayerState());
                                     case 'credits':
-                                        FlxG.switchState(new CreditsMenuState());
+                                        FlxG.switchState(new Gapple.CreditsMenuState());
                                 }
                             });
                         }
