@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import flixel.FlxG;
 import flixel.FlxSprite;
@@ -7,7 +7,7 @@ import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import lime.app.Application;
 
-class OutdatedSubState extends MusicBeatState
+class OutdatedSubState extends Gapple.MusicBeatState
 {
 	public static var leftState:Bool = false;
 
