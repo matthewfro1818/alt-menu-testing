@@ -1,4 +1,4 @@
-package;
+package Gapple;
 #if sys
 import sys.io.File;
 import sys.io.Process;
@@ -10,7 +10,7 @@ import flixel.util.FlxTimer;
 /**
  * scary!!!
  */
-class YouCheatedSomeoneIsComing extends MusicBeatState
+class YouCheatedSomeoneIsComing extends Gapple.MusicBeatState
 {
 	
 	public function new() 
