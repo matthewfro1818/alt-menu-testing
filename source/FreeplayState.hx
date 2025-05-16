@@ -409,6 +409,7 @@ class FreeplayState extends MusicBeatState
 				addWeek(['omission'], 21, ['dan']);
 				addWeek(['Doge-Vs-Bambi'], 22, ['doge']);
 				addWeek(['Wacky'], 24, ['peabrain']);
+				addWeek(['Enter Gapple Menu'], 17, ['terminal']);
 			case 'cover':
 				addWeek(['Confronting-Yourself'], 4, ['tristan-festival']);
 				addWeek(['Cob', 'Super-Saiyan'], 1, ['dave', 'dave-annoyed']);
@@ -753,6 +754,8 @@ class FreeplayState extends MusicBeatState
 				{
 					case 'Enter Terminal':
 						FlxG.switchState(new TerminalState());
+					case 'Enter Gapple Menu':
+						FlxG.switchState(new Gapple.MainMenuState());
 					default:
 						FlxG.sound.music.fadeOut(1, 0);
 						PlayState.SONG = Song.loadFromJson(Highscore.formatSong(songs[curSelected].songName.toLowerCase(), curDifficulty));
