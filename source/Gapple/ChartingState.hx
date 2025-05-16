@@ -1,8 +1,8 @@
 package Gapple;
 
-import Conductor.BPMChangeEvent;
-import Section.SwagSection;
-import Song.SwagSong;
+import Gapple.Conductor.BPMChangeEvent;
+import Gapple.Section.SwagSection;
+import Gapple.Song.SwagSong;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.addons.display.FlxGridOverlay;
