@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Sprigatito_sheet.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="idle0000" x="150" y="238" width="149" height="114" frameX="-18" frameY="-36" frameWidth="177" frameHeight="154"/>
+	<SubTexture name="idle0001" x="158" y="114" width="154" height="114" frameX="-4" frameY="-36" frameWidth="177" frameHeight="154"/>
+	<SubTexture name="idle0002" x="297" y="352" width="151" height="110" frameX="-18" frameY="-33" frameWidth="177" frameHeight="153"/>
+	<SubTexture name="idle0003" x="317" y="0" width="152" height="115" frameX="-14" frameY="-28" frameWidth="177" frameHeight="153"/>
+	<SubTexture name="left0000" x="0" y="238" width="150" height="114" frameX="-18" frameY="-36" frameWidth="177" frameHeight="154"/>
+	<SubTexture name="left0001" x="317" y="115" width="151" height="114" frameX="-4" frameY="-36" frameWidth="177" frameHeight="154"/>
+	<SubTexture name="left0002" x="469" y="109" width="150" height="109" frameX="-18" frameY="-35" frameWidth="177" frameHeight="153"/>
+	<SubTexture name="left0003" x="469" y="0" width="151" height="109" frameX="-14" frameY="-35" frameWidth="177" frameHeight="153"/>
+	<SubTexture name="right0000" x="158" y="0" width="159" height="114" frameX="-18" frameY="-36" frameWidth="177" frameHeight="154"/>
+	<SubTexture name="right0001" x="0" y="0" width="158" height="117" frameX="-4" frameY="-35" frameWidth="177" frameHeight="154"/>
+	<SubTexture name="up0000" x="299" y="238" width="149" height="114" frameX="-18" frameY="-36" frameWidth="177" frameHeight="154"/>
+	<SubTexture name="up0001" x="0" y="117" width="152" height="121" frameX="-4" frameY="-29" frameWidth="177" frameHeight="154"/>
+	<SubTexture name="up0002" x="0" y="352" width="148" height="113" frameX="-18" frameY="-30" frameWidth="177" frameHeight="153"/>
+	<SubTexture name="up0003" x="148" y="352" width="149" height="112" frameX="-4" frameY="-31" frameWidth="177" frameHeight="153"/>
+	<SubTexture name="down0000" x="469" y="218" width="150" height="95" frameX="-18" frameY="-36" frameWidth="177" frameHeight="154"/>
+	<SubTexture name="down0001" x="469" y="313" width="151" height="85" frameX="0" frameY="-47" frameWidth="177" frameHeight="154"/>
+	<SubTexture name="down0002" x="469" y="398" width="151" height="66" frameX="-16" frameY="-71" frameWidth="177" frameHeight="153"/>
+	<SubTexture name="down0003" x="0" y="465" width="151" height="48" frameX="1" frameY="-95" frameWidth="177" frameHeight="153"/>
+</TextureAtlas>

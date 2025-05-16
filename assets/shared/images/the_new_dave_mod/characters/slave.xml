@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="slave.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Slave Down0000" x="10" y="10" width="204" height="145" frameX="-69" frameY="0" frameWidth="330" frameHeight="280"/>
+	<SubTexture name="Slave Down0001" x="224" y="10" width="330" height="205" frameX="0" frameY="-6" frameWidth="330" frameHeight="280"/>
+	<SubTexture name="Slave Down0002" x="564" y="10" width="295" height="279" frameX="-9" frameY="-1" frameWidth="330" frameHeight="280"/>
+	<SubTexture name="Slave Down0003" x="869" y="10" width="246" height="245" frameX="-33" frameY="-4" frameWidth="330" frameHeight="280"/>
+	<SubTexture name="Slave Down0004" x="1125" y="10" width="201" height="170" frameX="-50" frameY="-3" frameWidth="330" frameHeight="280"/>
+	<SubTexture name="Slave Down0005" x="1336" y="10" width="184" height="150" frameX="-53" frameY="-4" frameWidth="330" frameHeight="280"/>
+	<SubTexture name="Slave Down0006" x="1530" y="10" width="191" height="149" frameX="-60" frameY="-5" frameWidth="330" frameHeight="280"/>
+	<SubTexture name="Slave Down0007" x="1731" y="10" width="215" height="152" frameX="-44" frameY="-3" frameWidth="330" frameHeight="280"/>
+	<SubTexture name="Slave Idle0000" x="10" y="299" width="127" height="190" frameX="-1" frameY="0" frameWidth="130" frameHeight="190"/>
+	<SubTexture name="Slave Idle0001" x="147" y="299" width="128" height="189" frameX="0" frameY="0" frameWidth="130" frameHeight="190"/>
+	<SubTexture name="Slave Idle0002" x="285" y="299" width="130" height="189" frameX="0" frameY="-1" frameWidth="130" frameHeight="190"/>
+	<SubTexture name="Slave Left0000" x="425" y="299" width="173" height="134" frameX="-27" frameY="-53" frameWidth="200" frameHeight="244"/>
+	<SubTexture name="Slave Left0001" x="608" y="299" width="191" height="151" frameX="-1" frameY="-93" frameWidth="200" frameHeight="244"/>
+	<SubTexture name="Slave Left0002" x="809" y="299" width="168" height="175" frameX="-14" frameY="-47" frameWidth="200" frameHeight="244"/>
+	<SubTexture name="Slave Left0003" x="987" y="299" width="129" height="193" frameX="-16" frameY="-7" frameWidth="200" frameHeight="244"/>
+	<SubTexture name="Slave Left0004" x="1126" y="299" width="136" height="204" frameX="0" frameY="0" frameWidth="200" frameHeight="244"/>
+	<SubTexture name="Slave Left0005" x="1272" y="299" width="122" height="195" frameX="-7" frameY="-9" frameWidth="200" frameHeight="244"/>
+	<SubTexture name="Slave Left0006" x="1404" y="299" width="122" height="196" frameX="-5" frameY="-12" frameWidth="200" frameHeight="244"/>
+	<SubTexture name="Slave Left0007" x="1404" y="299" width="122" height="196" frameX="-5" frameY="-12" frameWidth="200" frameHeight="244"/>
+	<SubTexture name="Slave Right0000" x="1536" y="299" width="207" height="167" frameX="0" frameY="-25" frameWidth="348" frameHeight="260"/>
+	<SubTexture name="Slave Right0001" x="1753" y="299" width="262" height="207" frameX="-27" frameY="0" frameWidth="348" frameHeight="260"/>
+	<SubTexture name="Slave Right0002" x="10" y="516" width="299" height="155" frameX="-49" frameY="-59" frameWidth="348" frameHeight="260"/>
+	<SubTexture name="Slave Right0003" x="319" y="516" width="203" height="186" frameX="-94" frameY="-65" frameWidth="348" frameHeight="260"/>
+	<SubTexture name="Slave Right0004" x="532" y="516" width="203" height="198" frameX="-71" frameY="-55" frameWidth="348" frameHeight="260"/>
+	<SubTexture name="Slave Right0005" x="745" y="516" width="216" height="197" frameX="-64" frameY="-60" frameWidth="348" frameHeight="260"/>
+	<SubTexture name="Slave Right0006" x="971" y="516" width="212" height="207" frameX="-65" frameY="-53" frameWidth="348" frameHeight="260"/>
+	<SubTexture name="Slave Up0000" x="1193" y="516" width="194" height="338" frameX="-1" frameY="-61" frameWidth="195" frameHeight="408"/>
+	<SubTexture name="Slave Up0001" x="1397" y="516" width="144" height="399" frameX="-39" frameY="-9" frameWidth="195" frameHeight="408"/>
+	<SubTexture name="Slave Up0002" x="1551" y="516" width="148" height="402" frameX="-31" frameY="0" frameWidth="195" frameHeight="408"/>
+	<SubTexture name="Slave Up0003" x="1709" y="516" width="186" height="387" frameX="-4" frameY="-12" frameWidth="195" frameHeight="408"/>
+	<SubTexture name="Slave Up0004" x="10" y="928" width="192" height="338" frameX="-2" frameY="-59" frameWidth="195" frameHeight="408"/>
+	<SubTexture name="Slave Up0005" x="212" y="928" width="185" height="302" frameX="0" frameY="-95" frameWidth="195" frameHeight="408"/>
+	<SubTexture name="Slave Up0006" x="407" y="928" width="144" height="181" frameX="-38" frameY="-222" frameWidth="195" frameHeight="408"/>
+	<SubTexture name="Slave Up0007" x="561" y="928" width="132" height="187" frameX="-44" frameY="-216" frameWidth="195" frameHeight="408"/>
+	<SubTexture name="Slave Up0008" x="285" y="299" width="130" height="189" frameX="-46" frameY="-214" frameWidth="130" frameHeight="190"/>
+	<SubTexture name="Slave Up0009" x="10" y="299" width="127" height="190" frameX="-47" frameY="-213" frameWidth="130" frameHeight="190"/>
+	<SubTexture name="Slave Up0010" x="703" y="928" width="128" height="189" frameX="-46" frameY="-214" frameWidth="195" frameHeight="408"/>
+	<SubTexture name="Slave Up0011" x="285" y="299" width="130" height="189" frameX="-46" frameY="-214" frameWidth="130" frameHeight="190"/>
+	<SubTexture name="Slave Up0012" x="10" y="299" width="127" height="190" frameX="-47" frameY="-213" frameWidth="130" frameHeight="190"/>
+	<SubTexture name="Slave Up0013" x="703" y="928" width="128" height="189" frameX="-46" frameY="-214" frameWidth="195" frameHeight="408"/>
+	<SubTexture name="Slave Up0014" x="285" y="299" width="130" height="189" frameX="-46" frameY="-214" frameWidth="130" frameHeight="190"/>
+	<SubTexture name="Slave Up0015" x="10" y="299" width="127" height="190" frameX="-47" frameY="-213" frameWidth="130" frameHeight="190"/>
+	<SubTexture name="Slave Up0016" x="703" y="928" width="128" height="189" frameX="-46" frameY="-214" frameWidth="195" frameHeight="408"/>
+	<SubTexture name="Slave Up0017" x="285" y="299" width="130" height="189" frameX="-46" frameY="-214" frameWidth="130" frameHeight="190"/>
+</TextureAtlas>

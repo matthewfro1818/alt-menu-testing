@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Eevee_Shiny.png">
+	<!-- Created using the Spritesheet and XML generator -->
+	<!-- https://uncertainprod.github.io/FNF-Spritesheet-XML-generator-Web -->
+	<SubTexture name="idle0000" x="0" y="511" width="120" height="105" frameX="-3" frameY="-25" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="idle0001" x="120" y="511" width="120" height="105" frameX="-3" frameY="-25" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="idle0002" x="362" y="392" width="120" height="105" frameX="-3" frameY="-25" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="idle0003" x="631" y="100" width="115" height="105" frameX="-3" frameY="-25" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="idle0004" x="240" y="511" width="118" height="105" frameX="-3" frameY="-25" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="idle0005" x="358" y="511" width="120" height="103" frameX="-3" frameY="-27" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="idle0006" x="242" y="392" width="120" height="107" frameX="-3" frameY="-23" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="left0000" x="631" y="512" width="107" height="103" frameX="-3" frameY="-27" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="left0001" x="631" y="205" width="116" height="102" frameX="-1" frameY="-28" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="left0002" x="631" y="0" width="121" height="100" frameX="1" frameY="-30" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="right0000" x="631" y="409" width="107" height="103" frameX="-18" frameY="-27" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="right0001" x="631" y="307" width="116" height="102" frameX="-11" frameY="-28" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="right0002" x="478" y="511" width="121" height="100" frameX="-8" frameY="-30" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="down0000" x="514" y="216" width="107" height="92" frameX="-4" frameY="-38" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="down0001" x="514" y="308" width="107" height="90" frameX="-4" frameY="-40" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="down0002" x="514" y="122" width="107" height="94" frameX="-4" frameY="-36" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="up0000" x="0" y="261" width="130" height="131" frameX="1" frameY="1" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="up0001" x="130" y="130" width="130" height="131" frameX="1" frameY="1" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="up0002" x="132" y="0" width="132" height="130" frameX="2" frameY="2" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="up0003" x="130" y="261" width="128" height="129" frameX="0" frameY="-1" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="up0004" x="0" y="130" width="130" height="131" frameX="1" frameY="1" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="up0005" x="264" y="0" width="130" height="131" frameX="1" frameY="1" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="up0006" x="0" y="0" width="132" height="130" frameX="2" frameY="2" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="up0007" x="264" y="131" width="128" height="129" frameX="0" frameY="-1" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="hey0000" x="121" y="392" width="121" height="119" frameX="-3" frameY="-11" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="hey0001" x="0" y="392" width="121" height="119" frameX="-3" frameY="-11" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="hey0002" x="394" y="0" width="120" height="120" frameX="-5" frameY="-10" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="hey0003" x="258" y="261" width="121" height="121" frameX="-7" frameY="-9" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="hey0004" x="394" y="120" width="118" height="122" frameX="-11" frameY="-8" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="hey0005" x="514" y="0" width="117" height="122" frameX="-9" frameY="-8" frameWidth="128" frameHeight="128"/>
+	<SubTexture name="hey0006" x="394" y="242" width="119" height="120" frameX="-5" frameY="-10" frameWidth="128" frameHeight="128"/>
+</TextureAtlas>

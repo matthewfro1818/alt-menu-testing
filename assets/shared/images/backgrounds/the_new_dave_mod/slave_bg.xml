@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="slave_bg.png">
+	<!-- Created with Adobe Animate version 19.0.0.326 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Symbol 30000" x="10" y="10" width="3652" height="1910" frameX="-195" frameY="0" frameWidth="4183" frameHeight="1978"/>
+	<SubTexture name="Symbol 30001" x="3672" y="10" width="4183" height="1964" frameX="0" frameY="0" frameWidth="4183" frameHeight="1978"/>
+	<SubTexture name="Symbol 30002" x="10" y="1984" width="3625" height="1978" frameX="-205" frameY="0" frameWidth="4183" frameHeight="1978"/>
+</TextureAtlas>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="chicken.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bacah0000" x="0" y="0" width="115" height="329" frameX="-55" frameY="0" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0001" x="119" y="0" width="120" height="327" frameX="-52" frameY="-1" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0002" x="243" y="0" width="143" height="311" frameX="-41" frameY="-17" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0003" x="243" y="0" width="143" height="311" frameX="-41" frameY="-17" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0004" x="390" y="0" width="176" height="286" frameX="-24" frameY="-42" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0005" x="390" y="0" width="176" height="286" frameX="-24" frameY="-42" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0006" x="570" y="0" width="203" height="264" frameX="-10" frameY="-64" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0007" x="570" y="0" width="203" height="264" frameX="-10" frameY="-64" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0008" x="777" y="0" width="223" height="243" frameX="0" frameY="-85" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0009" x="777" y="0" width="223" height="243" frameX="0" frameY="-85" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0010" x="777" y="0" width="223" height="243" frameX="0" frameY="-85" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0011" x="777" y="0" width="223" height="243" frameX="0" frameY="-85" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0012" x="777" y="0" width="223" height="243" frameX="0" frameY="-85" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="bacah0013" x="777" y="0" width="223" height="243" frameX="0" frameY="-85" frameWidth="223" frameHeight="329"/>
+	<SubTexture name="cidle0000" x="0" y="333" width="280" height="217" frameX="0" frameY="-27" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0001" x="284" y="333" width="249" height="223" frameX="-15" frameY="-20" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0002" x="537" y="333" width="233" height="236" frameX="-23" frameY="-7" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0003" x="537" y="333" width="233" height="236" frameX="-23" frameY="-7" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0004" x="774" y="333" width="223" height="243" frameX="-28" frameY="0" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0005" x="774" y="333" width="223" height="243" frameX="-28" frameY="0" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0006" x="774" y="333" width="223" height="243" frameX="-28" frameY="0" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0007" x="774" y="333" width="223" height="243" frameX="-28" frameY="0" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0008" x="774" y="333" width="223" height="243" frameX="-28" frameY="0" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0009" x="774" y="333" width="223" height="243" frameX="-28" frameY="0" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0010" x="774" y="333" width="223" height="243" frameX="-28" frameY="0" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0011" x="774" y="333" width="223" height="243" frameX="-28" frameY="0" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0012" x="774" y="333" width="223" height="243" frameX="-28" frameY="0" frameWidth="280" frameHeight="244"/>
+	<SubTexture name="cidle0013" x="774" y="333" width="223" height="243" frameX="-28" frameY="0" frameWidth="280" frameHeight="244"/>
+</TextureAtlas>

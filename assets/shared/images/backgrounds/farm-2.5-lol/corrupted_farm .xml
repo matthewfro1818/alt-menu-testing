@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Corrupted Farm.png">
+	<!-- Created with Adobe Animate version 21.0.6.41649 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bg instance 10000" x="11" y="11" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10001" x="11" y="11" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10002" x="11" y="11" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10003" x="11" y="11" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10004" x="11" y="11" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10005" x="3323" y="11" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10006" x="3323" y="11" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10007" x="3323" y="11" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10008" x="3323" y="11" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10009" x="3323" y="11" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10010" x="11" y="1787" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10011" x="11" y="1787" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10012" x="11" y="1787" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10013" x="11" y="1787" width="3293" height="1757"/>
+	<SubTexture name="bg instance 10014" x="11" y="1787" width="3293" height="1757"/>
+</TextureAtlas>
