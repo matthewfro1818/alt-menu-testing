@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import flixel.math.FlxMath;
 import flixel.FlxG;
@@ -8,7 +8,7 @@ import flixel.math.FlxPoint;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
 
-class GameOverSubstate extends MusicBeatSubstate
+class GameOverSubstate extends Gapple.MusicBeatSubstate
 {
 	var bf:Boyfriend;
 	var matt:Boyfriend;
