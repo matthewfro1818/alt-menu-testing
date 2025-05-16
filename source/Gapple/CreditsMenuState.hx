@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 #if desktop
 import cpp.abi.Abi;
@@ -27,7 +27,7 @@ import flixel.tweens.misc.ColorTween;
 import flixel.util.FlxStringUtil;
 import lime.utils.Assets;
 #if desktop
-import Discord.DiscordClient;
+import Gapple.Discord.DiscordClient;
 #end
 using StringTools;
 /*
