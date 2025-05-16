@@ -1,9 +1,9 @@
-package;
+package Gapple;
 
 import flixel.tweens.FlxTween;
 import flixel.tweens.FlxEase;
-import Controls.KeyboardScheme;
-import Controls.Control;
+import Gapple.Controls.KeyboardScheme;
+import Gapple.Controls.Control;
 import flash.text.TextField;
 import flixel.FlxG;
 import flixel.FlxSprite;
@@ -15,10 +15,10 @@ import flixel.text.FlxText;
 import flixel.util.FlxColor;
 import lime.utils.Assets;
 #if desktop
-import Discord.DiscordClient;
+import Gapple.Discord.DiscordClient;
 #end
 
-class OptionsMenu extends MusicBeatState
+class OptionsMenu extends Gapple.MusicBeatState
 {
 	var selector:FlxText;
 	var curSelected:Int = 0;
