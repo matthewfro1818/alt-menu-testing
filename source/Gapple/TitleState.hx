@@ -1,4 +1,4 @@
-package;
+package Gapple;
 
 import flixel.FlxG;
 import flixel.FlxSprite;
@@ -24,12 +24,12 @@ import io.newgrounds.NG;
 import lime.app.Application;
 import openfl.Assets;
 #if desktop
-import Discord.DiscordClient;
+import Gapple.Discord.DiscordClient;
 #end
 
 using StringTools;
 
-class TitleState extends MusicBeatState
+class TitleState extends Gapple.MusicBeatState
 {
 	static var initialized:Bool = false;
 
