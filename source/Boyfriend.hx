@@ -11,7 +11,6 @@ class Boyfriend extends Character
 {
 	public var stunned:Bool = false;
 	public var curBf:String = 'bf';
-	public var skins:Map<String, String> = new Map<String, String>();
 
 	public function new(x:Float, y:Float, ?char:String = 'bf')
 	{
