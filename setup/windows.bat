@@ -5,8 +5,8 @@ echo Installing dependencies, please wait...
 haxelib install hxcpp
 haxelib install lime 8.1.2
 haxelib install openfl 9.3.3
-haxelib install flixel 4.11.0
-haxelib install flixel-addons 2.11.0
+haxelib install flixel 5.6.1
+haxelib git flixel-addons https://github.com/FuseIsHere813/flixel-addons
 haxelib install flixel-tools
 haxelib install flixel-ui 2.6.1
 haxelib install actuate 1.9.0 
