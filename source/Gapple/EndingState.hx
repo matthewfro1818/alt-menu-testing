@@ -1,4 +1,4 @@
-package;
+package Gapple;
 import flixel.*;
 import flixel.util.FlxColor;
 import flixel.util.FlxTimer;
