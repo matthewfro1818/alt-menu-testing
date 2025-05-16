@@ -42,12 +42,12 @@ class Paths
 
 	inline static function getLibraryPathForce(file:String, library:String)
 	{
-		return '$library:assets/$library/$file';
+		return '$library:Gappleassets/$library/$file';
 	}
 
 	inline static function getPreloadPath(file:String)
 	{
-		return 'assets/$file';
+		return 'Gappleassets/$file';
 	}
 
 	inline static public function file(file:String, type:AssetType = TEXT, ?library:String)
@@ -87,18 +87,18 @@ class Paths
 
 	inline static public function voices(song:String, preLoad:Bool = false)
 	{
-		if (Main.shaggyVoice || preLoad) return 'songs:assets/songs/${song.toLowerCase()}/VoicesShaggy.$SOUND_EXT';
-		return 'songs:assets/songs/${song.toLowerCase()}/Voices.$SOUND_EXT';
+		if (Main.shaggyVoice || preLoad) return 'songs:Gappleassets/songs/${song.toLowerCase()}/VoicesShaggy.$SOUND_EXT';
+		return 'songs:Gappleassets/songs/${song.toLowerCase()}/Voices.$SOUND_EXT';
 	}
 
 	inline static public function inst(song:String)
 	{
-		return 'songs:assets/songs/${song.toLowerCase()}/Inst.$SOUND_EXT';
+		return 'songs:Gappleassets/songs/${song.toLowerCase()}/Inst.$SOUND_EXT';
 	}
 
 	inline static public function externmusic(song:String)
 	{
-		return 'songs:assets/songs/extern/${song.toLowerCase()}.$SOUND_EXT';
+		return 'songs:Gappleassets/songs/extern/${song.toLowerCase()}.$SOUND_EXT';
 	}
 
 	inline static public function image(key:String, ?library:String)
@@ -108,7 +108,7 @@ class Paths
 
 	inline static public function font(key:String)
 	{
-		return 'assets/fonts/$key';
+		return 'Gappleassets/fonts/$key';
 	}
 
 	inline static public function getSparrowAtlas(key:String, ?library:String)
