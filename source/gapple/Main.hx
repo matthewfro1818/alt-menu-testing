@@ -78,7 +78,6 @@ var ourSource:String = "assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelet
 var str1:String = "HTML CRAP";
 var vHandler = new VideoHandler();
 vHandler.init1();
-vHandler.video.name = str1;
 addChild(vHandler.video);
 vHandler.init2();
 GlobalVideo.setVid(vHandler);
@@ -88,8 +87,7 @@ var str1:String = "WEBM SHIT";
 var webmHandle = new WebmHandler();
 webmHandle.source(ourSource);
 webmHandle.makePlayer();
-webmHandle.webm.name = str1;
-addChild(webmHandle.webm);
+addChild(DisplayObject.webm);
 GlobalVideo.setWebm(webmHandle);
 #end
 
