@@ -11,7 +11,10 @@ class SaveDataHandler
 {
     public static function initSave()
     {
-        if (FlxG.save.data.newInput == null)
+		if (FlxG.save.data.newspritetest‎ == null)
+			FlxG.save.data.newunfair = false;
+                
+	        if (FlxG.save.data.newInput == null)
 			FlxG.save.data.newInput = true;
 
 		if (FlxG.save.data.downscroll == null)
