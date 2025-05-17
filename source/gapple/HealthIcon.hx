@@ -5,6 +5,7 @@ import flixel.math.FlxMath;
 
 class HealthIcon extends FlxSprite
 {
+if (FlxG.save.data.newspritetest == false) {
 	/**
 	 * Used for FreeplayState! If you use it elsewhere, prob gonna annoying
 	 */
@@ -171,9 +172,10 @@ class HealthIcon extends FlxSprite
 			setPosition(sprTracker.x + sprTracker.width + 10, sprTracker.y - 30);
 	}
 }
+}
 class HealthIconNew extends FlxSprite
 {
-if (FlxG.save.data.newspritetest == null) {
+if (FlxG.save.data.newspritetest == true) {
 	public var sprTracker:FlxSprite;
 
 	public var noAaChars:Array<String> = [
