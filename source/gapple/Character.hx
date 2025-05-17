@@ -605,8 +605,8 @@ class Character extends FlxSprite
 		
 				playAnim('danceRight');
 		}
-                if (FlxG.save.data.newspritetest) {
 			case 'bandu':
+                if (FlxG.save.data.newspritetest) {
 				frames = Paths.getSparrowAtlas('bambi/newshit/bandu');
 				
 				animation.addByPrefix('idle', 'idle', 24, true);
