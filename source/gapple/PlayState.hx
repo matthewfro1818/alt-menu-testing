@@ -7,7 +7,7 @@ import openfl.filters.BitmapFilter;
 import gapple.Shaders.PulseEffect;
 import gapple.Section.SwagSection;
 import gapple.Song.SwagSong;
-import gapple.HealthIconNew;
+import gapple.HealthIcon;
 import gapple.HealthIcon;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
@@ -231,12 +231,7 @@ class PlayState extends gapple.MusicBeatState
 	public var camZoomIntensity:Float = 1;
 
 	private var iconP1:HealthIcon;
-	if (FlxG.save.data.newspritetest) {
-        	private var iconP2:HealthIconNew;
-	}
-	else {
-         	private var iconP2:HealthIcon;
-	}
+        private var iconP2:HealthIcon;
 
 	private var BAMBICUTSCENEICONHURHURHUR:HealthIcon;
 	private var camHUD:FlxCamera;
@@ -887,7 +882,7 @@ class PlayState extends gapple.MusicBeatState
 		add(iconP1);
 
 		if (FlxG.save.data.newspritetest) {
-			iconP2 = new HealthIconNew(SONG.player2 == "bambi" ? "bambi-stupid" : SONG.player2, false);
+			iconP2 = new HealthIcon(SONG.player2 == "bambi" ? "bambi-stupid" : SONG.player2, false);
 			iconP2.y = healthBar.y - (iconP2.height / 2);
 			add(iconP2);
 		}
