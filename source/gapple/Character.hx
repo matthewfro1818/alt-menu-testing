@@ -605,8 +605,8 @@ class Character extends FlxSprite
 		
 				playAnim('danceRight');
 		}
-			case 'bandu':
                 if (FlxG.save.data.newspritetest) {
+			case 'bandu':
 				frames = Paths.getSparrowAtlas('bambi/newshit/bandu');
 				
 				animation.addByPrefix('idle', 'idle', 24, true);
@@ -773,7 +773,7 @@ class Character extends FlxSprite
 
 				playAnim('idle');
 			case 'unfair-junker':
-                if (FlxG.save.data.newspritetest)
+        if (FlxG.save.data.newspritetest) {
 				frames = Paths.getSparrowAtlas('bambi/newshit/UNFAIR_GUY_FAICNG_FORWARD');
 				animation.addByPrefix('idle', 'idle', 24, false);
 				animation.addByIndices('singUP', 'up', [0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], '', 24, false);
@@ -793,9 +793,10 @@ class Character extends FlxSprite
 				setGraphicSize(Std.int((width * 1.3) / furiosityScale));
 				updateHitbox();
 				antialiasing = false;
-		
+
 				playAnim('idle');
-                else {
+		}
+        else {
 				frames = Paths.getSparrowAtlas('bambi/UNFAIR_GUY_FAICNG_FORWARD');
 				animation.addByPrefix('idle', 'idle', 24, false);
 				animation.addByIndices('singUP', 'up', [0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], '', 24, false);
