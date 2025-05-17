@@ -80,7 +80,6 @@ class WebmHandler
 	
 	public function resume():Void
 	{
-		webm.changePlaying(true);
 		paused = false;
 	}
 	
