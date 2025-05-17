@@ -1,4 +1,4 @@
-package;
+package gapple;
 
 import gapple.Controls;
 import flixel.FlxCamera;
