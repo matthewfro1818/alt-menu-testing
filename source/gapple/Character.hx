@@ -554,8 +554,8 @@ class Character extends FlxSprite
 		
 				playAnim('idle');
 
-                if (FlxG.save.data.newspritetest) {
 			case 'bambi-piss-3d':
+                if (FlxG.save.data.newspritetest) {
 				// BAMBI SHITE ANIMATION LOADING CODE
 				tex = Paths.getSparrowAtlas('bambi/newshit/bambi_pissyboy');
 				frames = tex;
