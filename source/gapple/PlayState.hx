@@ -4773,7 +4773,12 @@ class PlayState extends gapple.MusicBeatState
 						camHUD.flash(FlxColor.WHITE, 1);
 						
 						iconRPC = 'icon_the_two_dunkers';
-						iconP2.animation.play('the-two-dunkers');
+						if (FlxG.save.data.newspritetest) {
+						iconP2.loadGraphic(Paths.image('icons/the-two-dunkers', 'preload'), true, 150, 150);
+						}
+					        else {
+						iconP2.loadGraphic(Paths.image('icons/junkers', 'preload'), true, 150, 150);
+						}
 						dad.playAnim('NOOMYPHONES', true);
 						dadmirror.playAnim('NOOMYPHONES', true);
 						dad.POOP = true; // WORK WORK WOKR< WOKRMKIEPATNOLIKSEHGO:"IKSJRHDLG"H
