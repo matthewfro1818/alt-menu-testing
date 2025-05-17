@@ -32,26 +32,7 @@ class NGio
 
 	public static function noLogin(api:String)
 	{
-		trace('INIT NOLOGIN');
-		GAME_VER = "v" + Application.current.meta.get('version');
-
-		if (api.length != 0)
-		{
-			NG.create(api);
-
-			new FlxTimer().start(2, function(tmr:FlxTimer)
-			{
-				var call = NG.core.calls.app.getCurrentVersion(GAME_VER).addStatusHandler();
-				{
-					GAME_VER_NUMS = GAME_VER.split(" ")[0].trim();
-					trace('CURRENT NG VERSION: ' + GAME_VER);
-					trace('CURRENT NG VERSION: ' + GAME_VER_NUMS);
-					gotOnlineVer = true;
-				}
-
-				call.send();
-			}
-		}
+		//nope
 	}
 
 	public function new(api:String, encKey:String, ?sessionId:String)
