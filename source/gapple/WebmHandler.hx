@@ -28,29 +28,13 @@ class WebmHandler
 	
 	public function makePlayer():Void
 	{
-		io = new WebmIoFile(vidPath);
 		webm = new WebmPlayer();
-		webm.fuck(io, false);
-		webm.addEventListener(WebmEvent.PLAY, function(e) {
-			onPlay();
-		});
-		webm.addEventListener(WebmEvent.COMPLETE, function(e) {
-			onEnd();
-		});
-		webm.addEventListener(WebmEvent.STOP, function(e) {
-			onStop();
-		});
-		webm.addEventListener(WebmEvent.RESTART, function(e) {
-			onRestart();
-		});
-		webm.visible = false;
 		initialized = true;
 	}
 	
 	public function updatePlayer():Void
 	{
-		io = new WebmIoFile(vidPath);
-		webm.fuck(io, false);
+		//nope
 	}
 	
 	public function play():Void
@@ -73,14 +57,12 @@ class WebmHandler
 	{
 		if (initialized)
 		{
-			webm.restart();
+			//nope
 		}
 	}
 	
 	public function update(elapsed:Float)
 	{
-		webm.x = GlobalVideo.calc(0);
-		webm.y = GlobalVideo.calc(1);
 		webm.width = GlobalVideo.calc(2);
 		webm.height = GlobalVideo.calc(3);
 	}
@@ -93,7 +75,6 @@ class WebmHandler
 	
 	public function pause():Void
 	{
-		webm.changePlaying(false);
 		paused = true;
 	}
 	
@@ -116,7 +97,6 @@ class WebmHandler
 	public function clearPause():Void
 	{
 		paused = false;
-		webm.removePause();
 	}
 	
 	public function onStop():Void
@@ -142,22 +122,22 @@ class WebmHandler
 	
 	public function alpha():Void
 	{
-		webm.alpha = GlobalVideo.daAlpha1;
+		//nope
 	}
 	
 	public function unalpha():Void
 	{
-		webm.alpha = GlobalVideo.daAlpha2;
+		//nope
 	}
 	
 	public function hide():Void
 	{
-		webm.visible = false;
+		//nope
 	}
 	
 	public function show():Void
 	{
-		webm.visible = true;
+		//nope
 	}
 	#else
 	public var webm:Sprite;
