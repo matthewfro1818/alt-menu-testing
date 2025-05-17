@@ -28,8 +28,7 @@ class WebmHandler
 	
 	public function makePlayer():Void
 	{
-		webm = new WebmPlayer();
-		initialized = true;
+		//nope
 	}
 	
 	public function updatePlayer():Void
