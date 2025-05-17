@@ -1,5 +1,6 @@
 package gapple;
 
+import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.math.FlxMath;
 
