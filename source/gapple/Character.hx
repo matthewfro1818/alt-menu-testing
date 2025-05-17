@@ -605,8 +605,8 @@ class Character extends FlxSprite
 		
 				playAnim('danceRight');
 		}
-                if (FlxG.save.data.newspritetest) {
 			case 'bandu':
+		if (FlxG.save.data.newspritetest) {
 				frames = Paths.getSparrowAtlas('bambi/newshit/bandu');
 				
 				animation.addByPrefix('idle', 'idle', 24, true);
@@ -645,7 +645,7 @@ class Character extends FlxSprite
 
 				antialiasing = false;
 		}
-                else {
+		else {
 				frames = Paths.getSparrowAtlas('bambi/bandu');
 				
 				animation.addByPrefix('idle', 'idle', 24, true);
@@ -685,7 +685,7 @@ class Character extends FlxSprite
 				antialiasing = false;
 
 				playAnim('idle');
-        	}
+		}
 			case 'bandu-candy':
 				frames = Paths.getSparrowAtlas('bambi/bandu_crazy');
 				
