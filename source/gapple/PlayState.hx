@@ -884,6 +884,7 @@ class PlayState extends gapple.MusicBeatState
 			iconP2:HealthIcon = new HealthIconNew(SONG.player2, false);
 			iconP2.y = healthBar.y - (iconP2.height / 2);
 			add(iconP2);
+		}
 		else {
 			iconP2 = new HealthIcon(SONG.player2 == "bambi" ? "bambi-stupid" : SONG.player2, false);
 			iconP2.y = healthBar.y - (iconP2.height / 2);
