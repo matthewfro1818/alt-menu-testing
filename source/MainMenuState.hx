@@ -131,8 +131,7 @@ class MainMenuState extends MusicBeatState
 	var canInteract:Bool = true;
 
 	var black:FlxSprite;
-
-	var checker:FlxBackdrop = new FlxBackdrop(Paths.image('ui/checkeredBG'), 0.2, 0.2, true, true);
+	
 	var gradientBar:FlxSprite = new FlxSprite(0, 0).makeGraphic(FlxG.width, 300, 0xFFfd719b);
 
 	override function create()
@@ -212,9 +211,6 @@ class MainMenuState extends MusicBeatState
 				gradientBar.y = FlxG.height - gradientBar.height;
 				add(gradientBar);
 				gradientBar.scrollFactor.set(0, 0);
-		
-				add(checker);
-				checker.scrollFactor.set(0, 0.07);
 			}
 		}
 		selectUi = new FlxSprite(0, 0).loadGraphic(Paths.image('mainMenu/Select_Thing', 'preload'));
@@ -335,10 +331,7 @@ class MainMenuState extends MusicBeatState
 	var selectedSomethin:Bool = false;
 
 	override function update(elapsed:Float)
-	{
-		checker.x -= 0.21;
-		checker.y -= 0.51;
-		
+	{	
 		#if SHADERS_ENABLED
 		if (voidShader != null)
 		{
