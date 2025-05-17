@@ -87,7 +87,6 @@ var str1:String = "WEBM SHIT";
 var webmHandle = new WebmHandler();
 webmHandle.source(ourSource);
 webmHandle.makePlayer();
-addChild(DisplayObject.webm);
 GlobalVideo.setWebm(webmHandle);
 #end
 
