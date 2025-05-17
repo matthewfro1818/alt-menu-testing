@@ -2,7 +2,7 @@ package gapple;
 
 import flixel.math.FlxRandom;
 import flixel.math.FlxPoint;
-import Controls.KeyboardScheme;
+import gapple.Controls.KeyboardScheme;
 import flixel.FlxG;
 import flixel.FlxObject;
 import flixel.FlxSprite;
