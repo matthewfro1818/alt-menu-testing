@@ -41,7 +41,7 @@ class NGio
 
 			new FlxTimer().start(2, function(tmr:FlxTimer)
 			{
-				var call = NG.core.calls.app.getCurrentVersion(GAME_VER).addStatusHandler(());
+				var call = NG.core.calls.app.getCurrentVersion(GAME_VER).addStatusHandler();
 				{
 					GAME_VER_NUMS = GAME_VER.split(" ")[0].trim();
 					trace('CURRENT NG VERSION: ' + GAME_VER);
