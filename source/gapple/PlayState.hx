@@ -231,7 +231,13 @@ class PlayState extends gapple.MusicBeatState
 	public var camZoomIntensity:Float = 1;
 
 	private var iconP1:HealthIcon;
-	private var iconP2:HealthIcon;
+	if (SONG.song.toLowerCase() == 'applecore' && SONG.song.toLowerCase() == 'disruption' && FlxG.save.data.newspritetest) {
+        	private var iconP2:HealthIconNew;
+	}
+	else {
+         	private var iconP2:HealthIcon;
+	}
+
 	private var BAMBICUTSCENEICONHURHURHUR:HealthIcon;
 	private var camHUD:FlxCamera;
 	private var camGame:FlxCamera;
@@ -881,7 +887,7 @@ class PlayState extends gapple.MusicBeatState
 		add(iconP1);
 
 		if (SONG.song.toLowerCase() == 'applecore' && SONG.song.toLowerCase() == 'disruption' && FlxG.save.data.newspritetest) {
-			iconP2: = new HealthIconNew(SONG.player2 == "bambi" ? "bambi-stupid" : SONG.player2, false);
+			iconP2 = new HealthIconNew(SONG.player2 == "bambi" ? "bambi-stupid" : SONG.player2, false);
 			iconP2.y = healthBar.y - (iconP2.height / 2);
 			add(iconP2);
 		}
