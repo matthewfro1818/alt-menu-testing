@@ -231,7 +231,7 @@ class PlayState extends gapple.MusicBeatState
 	public var camZoomIntensity:Float = 1;
 
 	private var iconP1:HealthIcon;
-	if (SONG.song.toLowerCase() == 'applecore' && SONG.song.toLowerCase() == 'disruption' && FlxG.save.data.newspritetest) {
+	if (FlxG.save.data.newspritetest) {
         	private var iconP2:HealthIconNew;
 	}
 	else {
