@@ -8,7 +8,6 @@ import io.newgrounds.components.ScoreBoardComponent.Period;
 import io.newgrounds.objects.Medal;
 import io.newgrounds.objects.Score;
 import io.newgrounds.objects.ScoreBoard;
-import io.newgrounds.objects.events.Response;
 import lime.app.Application;
 import openfl.display.Stage;
 
@@ -42,14 +41,13 @@ class NGio
 
 			new FlxTimer().start(2, function(tmr:FlxTimer)
 			{
-				var call = NG.core.calls.app.getCurrentVersion(GAME_VER).addStatusHandler(function(response:Response)
+				var call = NG.core.calls.app.getCurrentVersion(GAME_VER).addStatusHandler(());
 				{
-					GAME_VER = response.result.data.currentVersion;
 					GAME_VER_NUMS = GAME_VER.split(" ")[0].trim();
 					trace('CURRENT NG VERSION: ' + GAME_VER);
 					trace('CURRENT NG VERSION: ' + GAME_VER_NUMS);
 					gotOnlineVer = true;
-				});
+				}
 
 				call.send();
 			});
@@ -81,7 +79,6 @@ class NGio
 			/* They are NOT playing on newgrounds.com, no session id was found. We must start one manually, if we want to.
 			 * Note: This will cause a new browser window to pop up where they can log in to newgrounds
 			 */
-			NG.core.requestLogin(onNGLogin);
 		}
 	}
 
