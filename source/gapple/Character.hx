@@ -554,35 +554,10 @@ class Character extends FlxSprite
 		
 				playAnim('idle');
 
-                if (FlxG.save.data.newspritetest == false)
+                if (FlxG.save.data.newspritetest) {
 			case 'bambi-piss-3d':
 				// BAMBI SHITE ANIMATION LOADING CODE
-				tex = Paths.getSparrowAtlas('dave/bambi_pissyboy');
-				frames = tex;
-				animation.addByIndices('danceLeft', 'idle', [for (i in 0...13) i], "", 24, false);
-				animation.addByIndices('danceRight', 'idle', [for (i in 13...23) i], "", 24, false);
-				for (anim in ['left', 'down', 'up', 'right']) {
-					animation.addByPrefix('sing${anim.toUpperCase()}', anim, 24, false);
-				}
-		
-				addOffset('danceLeft');
-				addOffset('danceRight');
-				addOffset("singUP", 10, 20);
-				addOffset("singRIGHT", 30, 20);
-				addOffset("singLEFT", 30);
-				addOffset("singDOWN", 0, -10);
-				globaloffset[0] = 150;
-				globaloffset[1] = 450; //this is the y
-				setGraphicSize(Std.int(width / furiosityScale));
-				updateHitbox();
-				antialiasing = false;
-		
-				playAnim('danceRight');
-
-                if (FlxG.save.data.newspritetest == true)
-			case 'bambi-piss-3d':
-				// BAMBI SHITE ANIMATION LOADING CODE
-				tex = Paths.getSparrowAtlas('characters/main/bambi_pissyboy');
+				tex = Paths.getSparrowAtlas('bambi/newshit/bambi_pissyboy');
 				frames = tex;
 				animation.addByIndices('danceLeft', 'idle', [for (i in 0...13) i], "", 24, false);
 				animation.addByIndices('danceRight', 'idle', [for (i in 13...23) i], "", 24, false);
@@ -605,10 +580,72 @@ class Character extends FlxSprite
 				antialiasing = false;
 		
 				playAnim('danceRight');
-
-			
-                if (FlxG.save.data.newspritetest == false)
+		}
+                else {
+				// BAMBI SHITE ANIMATION LOADING CODE
+				tex = Paths.getSparrowAtlas('dave/bambi_pissyboy');
+				frames = tex;
+				animation.addByIndices('danceLeft', 'idle', [for (i in 0...13) i], "", 24, false);
+				animation.addByIndices('danceRight', 'idle', [for (i in 13...23) i], "", 24, false);
+				for (anim in ['left', 'down', 'up', 'right']) {
+					animation.addByPrefix('sing${anim.toUpperCase()}', anim, 24, false);
+				}
+		
+				addOffset('danceLeft');
+				addOffset('danceRight');
+				addOffset("singUP", 10, 20);
+				addOffset("singRIGHT", 30, 20);
+				addOffset("singLEFT", 30);
+				addOffset("singDOWN", 0, -10);
+				globaloffset[0] = 150;
+				globaloffset[1] = 450; //this is the y
+				setGraphicSize(Std.int(width / furiosityScale));
+				updateHitbox();
+				antialiasing = false;
+		
+				playAnim('danceRight');
+		}
+                if (FlxG.save.data.newspritetest) {
 			case 'bandu':
+				frames = Paths.getSparrowAtlas('bambi/newshit/bandu');
+				
+				animation.addByPrefix('idle', 'idle', 24, true);
+				animation.addByPrefix('singUP', 'up', 24, false);
+				animation.addByPrefix('singRIGHT', 'right', 24, false);
+				animation.addByPrefix('singDOWN', 'down', 24, false);
+				animation.addByPrefix('singLEFT', 'left', 24, false);
+				
+				animation.addByIndices('idle-alt', 'phones fall', [17], '', 24, false);
+				animation.addByPrefix('singUP-alt', 'sad up', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'sad right', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'sad down', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'sad left', 24, false);
+
+				animation.addByIndices('NOOMYPHONES', 'phones fall', [0, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 17], '', 24, false);
+				
+				addOffset('idle');
+				addOffset("singUP", 0, 80);
+				addOffset("singRIGHT", 140, -80);
+				addOffset("singLEFT", 200);
+				addOffset("singDOWN", 0, -30);
+				
+				addOffset('NOOMYPHONES');
+
+				addOffset('idle-alt');
+				addOffset("singUP-alt", 0, 100);
+				addOffset("singRIGHT-alt", 30);
+				addOffset("singLEFT-alt", -20, -38);
+				addOffset("singDOWN-alt");
+
+				globaloffset[0] = 150;
+				globaloffset[1] = 450;
+
+				setGraphicSize(Std.int(width / furiosityScale));
+				updateHitbox();
+
+				antialiasing = false;
+		}
+                else {
 				frames = Paths.getSparrowAtlas('bambi/bandu');
 				
 				animation.addByPrefix('idle', 'idle', 24, true);
@@ -648,45 +685,7 @@ class Character extends FlxSprite
 				antialiasing = false;
 
 				playAnim('idle');
-                if (FlxG.save.data.newspritetest == true)
-			case 'bandu':
-				frames = Paths.getSparrowAtlas('bambi/newshit/bandu');
-				
-				animation.addByPrefix('idle', 'idle', 24, true);
-				animation.addByPrefix('singUP', 'up', 24, false);
-				animation.addByPrefix('singRIGHT', 'right', 24, false);
-				animation.addByPrefix('singDOWN', 'down', 24, false);
-				animation.addByPrefix('singLEFT', 'left', 24, false);
-				
-				animation.addByIndices('idle-alt', 'phones fall', [17], '', 24, false);
-				animation.addByPrefix('singUP-alt', 'sad up', 24, false);
-				animation.addByPrefix('singRIGHT-alt', 'sad right', 24, false);
-				animation.addByPrefix('singDOWN-alt', 'sad down', 24, false);
-				animation.addByPrefix('singLEFT-alt', 'sad left', 24, false);
-
-				animation.addByIndices('NOOMYPHONES', 'phones fall', [0, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 17], '', 24, false);
-				
-				addOffset('idle');
-				addOffset("singUP", 0, 80);
-				addOffset("singRIGHT", 140, -80);
-				addOffset("singLEFT", 200);
-				addOffset("singDOWN", 0, -30);
-				
-				addOffset('NOOMYPHONES');
-
-				addOffset('idle-alt');
-				addOffset("singUP-alt", 0, 100);
-				addOffset("singRIGHT-alt", 30);
-				addOffset("singLEFT-alt", -20, -38);
-				addOffset("singDOWN-alt");
-
-				globaloffset[0] = 150;
-				globaloffset[1] = 450;
-
-				setGraphicSize(Std.int(width / furiosityScale));
-				updateHitbox();
-
-				antialiasing = false;
+        	}
 			case 'bandu-candy':
 				frames = Paths.getSparrowAtlas('bambi/bandu_crazy');
 				
@@ -773,31 +772,8 @@ class Character extends FlxSprite
 				addOffset("singDOWN", -5, 2);
 
 				playAnim('idle');
-                if (FlxG.save.data.newspritetest == false)
 			case 'unfair-junker':
-				frames = Paths.getSparrowAtlas('bambi/UNFAIR_GUY_FAICNG_FORWARD');
-				animation.addByPrefix('idle', 'idle', 24, false);
-				animation.addByIndices('singUP', 'up', [0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], '', 24, false);
-				animation.addByIndices('singRIGHT', 'right', [0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], '', 24, false);
-				animation.addByIndices('singDOWN', 'down', [0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], '', 24, false);
-				animation.addByIndices('singLEFT', 'left', [0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], '', 24, false);
-				animation.addByIndices('inhale', 'INHALE', [0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 1, 2, 1, 2, 1, 0, 0], '', 24, false);
-
-				addOffset('idle');
-				addOffset("singUP");
-				addOffset("singRIGHT");
-				addOffset("singLEFT");
-				addOffset("singDOWN");
-				addOffset('inhale');
-				globaloffset[0] = 150 * 1.3;
-				globaloffset[1] = 450 * 1.3; //this is the y
-				setGraphicSize(Std.int((width * 1.3) / furiosityScale));
-				updateHitbox();
-				antialiasing = false;
-		
-				playAnim('idle');
-                if (FlxG.save.data.newspritetest == true)
-			case 'unfair-junker':
+                if (FlxG.save.data.newspritetest)
 				frames = Paths.getSparrowAtlas('bambi/newshit/UNFAIR_GUY_FAICNG_FORWARD');
 				animation.addByPrefix('idle', 'idle', 24, false);
 				animation.addByIndices('singUP', 'up', [0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], '', 24, false);
@@ -819,6 +795,29 @@ class Character extends FlxSprite
 				antialiasing = false;
 		
 				playAnim('idle');
+                else {
+				frames = Paths.getSparrowAtlas('bambi/UNFAIR_GUY_FAICNG_FORWARD');
+				animation.addByPrefix('idle', 'idle', 24, false);
+				animation.addByIndices('singUP', 'up', [0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], '', 24, false);
+				animation.addByIndices('singRIGHT', 'right', [0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], '', 24, false);
+				animation.addByIndices('singDOWN', 'down', [0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], '', 24, false);
+				animation.addByIndices('singLEFT', 'left', [0, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2], '', 24, false);
+				animation.addByIndices('inhale', 'INHALE', [0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2, 1, 2, 1, 2, 1, 0, 0], '', 24, false);
+
+				addOffset('idle');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+				addOffset('inhale');
+				globaloffset[0] = 150 * 1.3;
+				globaloffset[1] = 450 * 1.3; //this is the y
+				setGraphicSize(Std.int((width * 1.3) / furiosityScale));
+				updateHitbox();
+				antialiasing = false;
+		
+				playAnim('idle');
+		}
 			case 'bf':
 				var tex = Paths.getSparrowAtlas('BOYFRIEND');
 				frames = tex;
