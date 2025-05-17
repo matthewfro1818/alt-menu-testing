@@ -4,8 +4,8 @@ import flixel.FlxSprite;
 import flixel.math.FlxMath;
 
 class HealthIcon extends FlxSprite
+if (FlxG.save.data.newspritetest == false)
 {
-if (FlxG.save.data.newspritetest == false) {
 	/**
 	 * Used for FreeplayState! If you use it elsewhere, prob gonna annoying
 	 */
@@ -172,10 +172,9 @@ if (FlxG.save.data.newspritetest == false) {
 			setPosition(sprTracker.x + sprTracker.width + 10, sprTracker.y - 30);
 	}
 }
-}
 class HealthIconNew extends FlxSprite
+if (FlxG.save.data.newspritetest == true)
 {
-if (FlxG.save.data.newspritetest == true) {
 	public var sprTracker:FlxSprite;
 
 	public var noAaChars:Array<String> = [
@@ -245,5 +244,4 @@ if (FlxG.save.data.newspritetest == true) {
 	{
 		return char;
 	}
-}
 }
