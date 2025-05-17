@@ -1,6 +1,7 @@
 package gapple;
 
 import flixel.FlxG;
+import gapple.WebmPlayer;
 import openfl.display.Sprite;
 #if desktop
 import webm.*;
