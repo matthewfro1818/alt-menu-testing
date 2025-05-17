@@ -7,6 +7,8 @@ import openfl.filters.BitmapFilter;
 import gapple.Shaders.PulseEffect;
 import gapple.Section.SwagSection;
 import gapple.Song.SwagSong;
+import gapple.HealthIcon.HealthIconNew;
+import gapple.HealthIcon;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
@@ -350,7 +352,7 @@ class PlayState extends gapple.MusicBeatState
 		detailsPausedText = "Paused - " + detailsText;
 
 		curStage = "";
-
+		
 		if (botPlay) botText = "Bot Play - ";
 		if (practiceMode) botText = "Practice Mode - ";
 		// Updating Discord Rich Presence.
@@ -873,13 +875,20 @@ class PlayState extends gapple.MusicBeatState
 		{
 			iconP1IsPlayer = false;
 		}
+		
 		iconP1 = new HealthIcon((formoverride == "none" || formoverride == "bf") ? SONG.player1 : formoverride, iconP1IsPlayer);
 		iconP1.y = healthBar.y - (iconP1.height / 2);
 		add(iconP1);
 
-		iconP2 = new HealthIcon(SONG.player2 == "bambi" ? "bambi-stupid" : SONG.player2, false);
-		iconP2.y = healthBar.y - (iconP2.height / 2);
-		add(iconP2);
+		if (SONG.song.toLowerCase() == 'applecore' && SONG.song.toLowerCase() == 'disruption' && FlxG.save.data.newspritetest) {
+			iconP2:HealthIcon = new HealthIconNew(SONG.player2, false);
+			iconP2.y = healthBar.y - (iconP2.height / 2);
+			add(iconP2);
+		else {
+			iconP2 = new HealthIcon(SONG.player2 == "bambi" ? "bambi-stupid" : SONG.player2, false);
+			iconP2.y = healthBar.y - (iconP2.height / 2);
+			add(iconP2);
+		}
 
 		thunderBlack.cameras = [camHUD];
 		strumLineNotes.cameras = [camHUD];
