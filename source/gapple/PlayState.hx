@@ -7,7 +7,7 @@ import openfl.filters.BitmapFilter;
 import gapple.Shaders.PulseEffect;
 import gapple.Section.SwagSection;
 import gapple.Song.SwagSong;
-import gapple.HealthIcon.HealthIconNew;
+import gapple.HealthIconNew;
 import gapple.HealthIcon;
 import flixel.FlxBasic;
 import flixel.FlxCamera;
