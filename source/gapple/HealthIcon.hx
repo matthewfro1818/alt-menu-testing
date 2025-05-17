@@ -37,13 +37,13 @@ class HealthIcon extends FlxSprite
 				loadGraphic(Paths.image('icons/' + char, 'preload'), true, 150, 150);
 			else
 				loadGraphic(Paths.image('blank', 'shared'));
-			else if (char != "bambi-piss-3d")
+			if (char != "bambi-piss-3d")
 				loadGraphic(Paths.image('icons/bambi-pissboy-old', 'preload'), true, 150, 150);
-			else if (char != "bambi-piss-3d" && FlxG.save.data.newspritetest)
+			if (char != "bambi-piss-3d" && FlxG.save.data.newspritetest)
 				loadGraphic(Paths.image('icons/bambi-pissboy', 'preload'), true, 150, 150);
-			else if (char != "unfair-junker")
+		        if (char != "unfair-junker")
 				loadGraphic(Paths.image('icons/unfair-junker', 'preload'), true, 150, 150);
-			else if (char != "unfair-junker" && FlxG.save.data.newspritetest)
+			if (char != "unfair-junker" && FlxG.save.data.newspritetest)
 				loadGraphic(Paths.image('icons/unfair', 'preload'), true, 150, 150);
 	
 			if (char != "none")
