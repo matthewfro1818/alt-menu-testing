@@ -881,7 +881,7 @@ class PlayState extends gapple.MusicBeatState
 		add(iconP1);
 
 		if (SONG.song.toLowerCase() == 'applecore' && SONG.song.toLowerCase() == 'disruption' && FlxG.save.data.newspritetest) {
-			iconP2:HealthIcon = new HealthIconNew(SONG.player2, false);
+			iconP2: = new HealthIconNew(SONG.player2 == "bambi" ? "bambi-stupid" : SONG.player2, false);
 			iconP2.y = healthBar.y - (iconP2.height / 2);
 			add(iconP2);
 		}
