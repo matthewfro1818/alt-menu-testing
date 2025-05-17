@@ -50,7 +50,7 @@ class NGio
 				}
 
 				call.send();
-			});
+			}
 		}
 	}
 
