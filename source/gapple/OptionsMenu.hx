@@ -173,7 +173,7 @@ class OptionsMenu extends gapple.MusicBeatState
 						grpControls.add(ctrl);
 					case 12:
 						FlxG.save.data.newspritetest = !FlxG.save.data.newspritetest;
-						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, "New Sprites " + (!FlxG.save.data.newspritetest‎ ? "off" : "on"), true, false);
+						var ctrl:Alphabet = new Alphabet(0, (70 * curSelected) + 30, "New Sprites " + (!FlxG.save.data.newspritetest ? "off" : "on"), true, false);
 						ctrl.isMenuItem = true;
 						ctrl.targetY = curSelected - 11;
 						grpControls.add(ctrl);
