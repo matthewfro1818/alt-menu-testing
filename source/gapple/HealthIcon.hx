@@ -6,6 +6,8 @@ import flixel.math.FlxMath;
 class HealthIcon extends FlxSprite
 {
 	public var sprTracker:FlxSprite;
+	
+	public var charPublic:String = 'bf';
 
 	public var noAaChars:Array<String> = [
 		'dave-angey',
